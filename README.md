@@ -15,3 +15,9 @@
 
 ### .ENV File
 ``pip install python-dotenv``
+
+use gitignore then search for dotenv and pycharm+all
+copy and paste to .gitignore file
+
+### To Use Json Schema
+``pip install jsonschema``
