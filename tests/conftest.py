@@ -7,7 +7,7 @@ from src.helpers.payload_manager import payload_create_booking, payload_create_t
 from src.helpers.common_verification import verify_response_key_should_not_be_none, verify_http_status_code
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture()
 def create_token(self):
     response = post_requests(url=APIConstants.url_create_token(), auth=None, payload=payload_create_token(),
                              headers=common_headers_json(), in_json=False)
@@ -19,7 +19,7 @@ def create_token(self):
     return token
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture()
 def create_booking(self):
     response = post_requests(url=APIConstants.url_create_booking(), auth=None, headers=common_headers_json(),
                              payload=payload_create_booking(), in_json=False)

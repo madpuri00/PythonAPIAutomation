@@ -9,6 +9,7 @@
 
 ### Run testcases parallel
 ``pip install pytest-xdist``
+``pytest -n auto tests/integration_test/test_create_booking.py -s -v``
 
 ### DDT Excel files
 ``pip install openpyxl``
