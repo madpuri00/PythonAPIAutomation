@@ -1,6 +1,6 @@
 from src.helpers.api_requests_wrapper import post_requests, put_requests
 from src.constants.api_constants import APIConstants
-from src.helpers.utils import common_headers_json, common_headers_for_put
+from src.helpers.utils import common_headers_json
 from src.helpers.payload_manager import payload_create_booking, payload_create_token
 from src.helpers.common_verification import verify_response_key_should_not_be_none, verify_http_status_code
 import requests
